@@ -150,15 +150,6 @@ def load_from_json(filename):
     except FileNotFoundError:
         list_route = []
 
-if __name__ == "__main__":
-    # хранится файл JSON
-    json_filename = 'routes.json'
 
-    # Загрузка данных из файла JSON
-    load_from_json('routes.json')
-
-    try:
-        main()
-    finally:
-        # Сохранение данных в файл JSON перед завершением программы
-        save_to_json('routes.json')
+if __name__ == '__main__':
+    main()
